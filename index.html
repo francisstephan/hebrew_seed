@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hebrew keyboard</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+    <h1>Use your latin keyboard to get hebrew characters :</h1>
+    <table>
+        <tr><td class="s">To get :</td><td>א</td><td>ב</td><td>ג</td><td>ד</td><td>ה</td>
+            <td>ו</td><td>ז</td><td>ח</td><td>ט</td><td>י</td><td>כ, ך</td>
+            <td>ל</td><td>מ,ם</td><td>נ, ן</td><td>ס</td><td>ע</td><td>פ,ף</td><td>צ, ץ</td><td>ק</td><td>ר</td>
+            <td>ש</td><td>ת</td></tr>
+          <tr><td class="s">type :</td><td>'</td><td>b</td><td>g</td><td>d</td><td>h</td>
+            <td>w</td><td>z</td><td>H</td><td>T</td><td>y</td><td>k</td><td>l</td><td>m</td>
+            <td>n</td><td>c</td><td>A</td><td>p</td><td>S</td><td>q</td><td>r</td><td>s</td>
+            <td>t</td></tr>    
+    </table>
+    <section id="app">Loading ...</section>
+    <p id="footer">© Francis Stephan 2020<br />Source code available at 
+        <a href="https://github.com/francisstephan/hebrewscript">https://github.com/francisstephan/hebrewscript</a></p>
+    <script type="module">
+        import init from './pkg/package.js';
+        init('./pkg/package_bg.wasm');
+    </script>
+    <script language = javascript>
+        copyTextToClipboard = function(text) {
+              // source : https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript
+              var textArea = document.createElement("textarea");
+
+              textArea.style.position = 'fixed'; textArea.style.top = 0; textArea.style.left = 0;
+              textArea.style.width = '2em'; textArea.style.height = '2em'; textArea.style.padding = 0;
+              textArea.style.border = 'none'; textArea.style.outline = 'none'; textArea.style.boxShadow = 'none';
+              textArea.style.background = 'transparent';
+              textArea.value = text;
+              document.body.appendChild(textArea);
+              textArea.select();
+            try {
+                var successful = document.execCommand('copy');
+                var msg = successful ? 'successful' : 'unsuccessful';
+                console.log('Copying text command was ' + msg);
+            } catch (err) {
+                console.log('Oops, unable to copy');
+            }
+            document.body.removeChild(textArea);
+        }
+        resetFocus = function() {
+            document.getElementById("entrée").focus();
+        }
+    </script>
+</body>
+</html>
