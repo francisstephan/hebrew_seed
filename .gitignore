@@ -3,4 +3,7 @@
 Cargo.lock
 /pkg
 /ivrit-seed-folder
+src/lib.rs.back
 
+# Local Netlify folder
+.netlify
