@@ -1,4 +1,4 @@
-# HebrewScript
+# Hebrew_Seed
 
 ## Get hebrew text from latin characters
 
