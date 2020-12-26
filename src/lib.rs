@@ -76,6 +76,7 @@ fn view(model: &Model) -> Node<Msg> {
                 // At::AutoFocus => String::from("true"), DOES NOT WORK
                 At::Type => "text",
                 At::Value => model.content;
+                At::Placeholder => "Start typing ..."
             },
             style!{
                 St::Width => px(700),

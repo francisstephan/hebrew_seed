@@ -1,6 +1,6 @@
 [package]
 name = "ivrit-seed"
-repository = "https://github.com/seed-rs/seed-quickstart"
+repository = "https://github.com/francisstephan/hebrew_seed"
 version = "0.1.0"
 authors = ["Francis Stephan <francis.stephan@free.fr>"]
 description = "App Description"
