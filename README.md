@@ -11,7 +11,7 @@ Refer to the table of correspondence to type the desired chars.
 
 After a time this will become quite natural, and you will no longer need to refer to the tables.
 
-Try live at : http://www.eludev.fr/ivrit-seed (works with Firefox and Chrome, does not work with Safari which does not accept wasm modules)
+Try live at : https://ivrit-seed-app.netlify.app/ (works with Firefox and Chrome, does not work with Safari which does not accept wasm modules)
 
 ## Development
 
