@@ -32,7 +32,7 @@ For comparison's sake, the same type of software was developed:
 
 The Seed framework is implemented in lib.rs, which closely follows the elm language model (see the elm version for a comparison).
 
-The "tohebrew.rs" module demonstratezs the possibility to use functional programming with rust.
+The "tohebrew.rs" module demonstrates the possibility to use functional programming with rust.
 
 
 ## License
